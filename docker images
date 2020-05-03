@@ -1,0 +1,14 @@
+1. first install docker on system ----then login jenkin -- create project-----ok ----
+to go SCM ---add git repository with credential 
+2). go to in jenkins sysetm  installed publish over ssh  and deployed to container plugin-- then--
+go to configure ---publish over ssh --add new server---enter docker system details like- hostname, username, 
+go to advanece option - enter system passwod--- and test connection---
+
+then back to jenkins
+go to project ---go to post step--select file to execute cmd over ssh
+name--docker system details
+source file---
+remote directory--  docker system path  
+execute cmd---- docker build -t abc_demo
+
+
